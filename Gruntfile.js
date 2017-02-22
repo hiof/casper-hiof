@@ -35,19 +35,19 @@ module.exports = function(grunt) {
         //flatten: true,
         cwd: 'tmp/css/',
         src: '*.css',
-        dest: 'build/casper-hiof'
+        dest: 'build/casper-hiof-child'
       }
     },
     cssmin: {
       main: {
         options: {
           keepSpecialComments: '*',
-          banner: '/*! \n Theme Name: Casper Hiof \n Theme URI: <%= pkg.homepage %> \n Author: <%= pkg.author %> \n Author URI: http://hiof.no \n Description: <%= pkg.description %>  \n Version: <%= pkg.version %> \n Template: casper \n Usage: Copy the casper-hiof folder into your wp-content/themes/ directory and activate it in the dashboard. \n */'
+          banner: ''
         },
         expand: true,
-        cwd: 'build/casper-hiof',
+        cwd: 'build/casper-hiof-child',
         src: ['*.css', '!*.min.css'],
-        dest: 'build/casper-hiof',
+        dest: 'build/casper-hiof-child',
         ext: '.css'
       }
     },
@@ -56,14 +56,14 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'app/php/',
         src: '**',
-        dest: 'build/casper-hiof/',
+        dest: 'build/casper-hiof-child/',
         filter: 'isFile'
       },
       wpFiles:{
         expand: true,
         cwd: 'app/wp-files/',
         src: '**',
-        dest: 'build/casper-hiof/',
+        dest: 'build/casper-hiof-child/',
         filter: 'isFile'
       },
       dist:{

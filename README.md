@@ -1,4 +1,4 @@
-# Casper hiof theme
+# -HiØ, alternativ 2, Casper
 
 ## About
 
@@ -72,5 +72,3 @@ Copy the content of the /dist folder to your wp-content folder.
 
 
 ## Roadmap
-
-- [ ] v1.2.0

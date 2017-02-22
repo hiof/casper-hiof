@@ -1,10 +1,20 @@
+/*!
+Theme Name: -HiØ, alternativ 2, Casper
+Theme URI: github.com/hiof/casper-hiof
+Author: Kenneth Lindbeck-Dahlstrøm
+Author URI: http://design.hiof.no/web?del=bloggmal-alternativ-2
+Description: Bloggmal alternativ 2. Minimalistisk tema med innhold i en spalte. Har blant annet konfigurasjonsmuligheter for et cover-bilde.
+Version: 1.3.0
+Template: casper
+Usage: Copy the casper-hiof-child folder into your wp-content/themes/ directory and activate it in the dashboard.
+*/
+
 .byline, .updated{
   display: inline;
 }
 
 //@import "../../../vendor/hiof-frontend/app/assets/sass/variables/_standard";
 @import "../../../vendor/hiof-typography/dist/typography";
-
 
 body, h1,h2,h3,h4,h5,h6, .blog-description, .blog-title, .post-title, .post-meta, .widget-area{
   font-family: 'Source Sans Pro', sans-serif;
